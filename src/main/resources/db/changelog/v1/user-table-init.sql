@@ -1,5 +1,5 @@
 CREATE TABLE `java_web_app`.`users` (
-                                       `id` BIGINT(20) NOT NULL,
+                                       `id` BIGINT(20) NOT NULL AUTO_INCREMENT,
                                        `email` VARCHAR(45) NOT NULL,
                                        `password` VARCHAR(45) NOT NULL,
                                        PRIMARY KEY (`id`),
