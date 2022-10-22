@@ -3,7 +3,7 @@
 BROWSER -> GET -> MySQL -> SELECT\
 BROWSER -> POST -> MySQL -> INSERT\
 BROWSER -> PUT -> MySQL -> UPDATE\
-BROWSER -> DELETE -> MySQL -> DELETE\
+BROWSER -> DELETE -> MySQL -> DELETE
 
 Connect to MySQL by JDBC (Java Database Connectivity)
 with JPA (Hibernate) API
