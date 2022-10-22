@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 @RequiredArgsConstructor
 public class UserController {
@@ -17,5 +19,10 @@ public class UserController {
     @GetMapping("/user/{id}")
     public User getUser(@PathVariable Long id) {
         return userService.getUser(id);
+    }
+
+    @GetMapping("/users")
+    public List<User> getUsers() {
+        return userService.getUsers();
     }
 }
