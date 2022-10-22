@@ -1,0 +1,1 @@
+CREATE SCHEMA `java_web_app` DEFAULT CHARACTER SET utf8 ;
