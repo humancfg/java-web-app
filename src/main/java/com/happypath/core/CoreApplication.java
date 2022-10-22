@@ -1,5 +1,6 @@
 package com.happypath.core;
 
+import com.happypath.core.db.InitUsers;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.client.RestTemplateBuilder;
@@ -16,6 +17,12 @@ public class CoreApplication {
 	@Bean
 	public RestTemplate restTemplate() {
 		return new RestTemplateBuilder().build();
+	}
+
+
+	@Bean(initMethod = "addUsers")
+	public InitUsers init() {
+		return new InitUsers();
 	}
 
 }
